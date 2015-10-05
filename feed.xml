@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
@@ -23,7 +23,6 @@ layout: default
   <email>{{ site.owner.email }}</email>
 </author>
 {% for post in site.posts limit:20 %}
-
 <entry>
   <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
   <link rel="alternate" type="text/html" href="{% if post.link %}{{ post.link }}{% else %}{{ site_url }}{{ post.url }}{% endif %}"/>
