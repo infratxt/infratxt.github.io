@@ -17,5 +17,3 @@ My name is **Corin Faife**, and this is the start of a new blog.
 Over the next 3 months, I'll be documenting the process of teaching myself JavaScript for data visualisation.
 
 Expect tutorials, code snippets, and frequent weeping into my keyboard.
-
-More coming soon...
