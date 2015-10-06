@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Infratxt Project"
-date:   2015-10-05
+date:   2015-10-05 13:25:15
 categories: update
 permalink:
 ---
@@ -15,3 +15,9 @@ Thankfully syntax highlighting in _gedit_ makes it easier.
     <div class="footer">
         &copy; 2004 Foo Corporation
     </div>
+    
+    
+Goals
+======
+
+* More front-end than backend, hence JavaScript. BUT: have an understanding of back-end processes.
