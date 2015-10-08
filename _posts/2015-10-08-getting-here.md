@@ -4,6 +4,8 @@ title:  "Getting Here"
 date:   2015-10-08 16:15:15
 categories: update
 permalink:
+image:
+  thumb: road.jpg
 ---
 
 I started writing my first blog five years ago, in 2010, when I travelled solo in India for the second time. In the grand scheme of things it wasn’t much - a few anecdotes, a handful of photos - but it felt satisfying to be producing and uploading my own content, to my schedule, on a domain that I controlled.
