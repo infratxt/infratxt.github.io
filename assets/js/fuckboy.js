@@ -1,0 +1,13 @@
+alert("Hey");
+alert("Ur cute");
+alert("Heyyyy");
+alert("Hey sexy");
+alert("U there?");
+alert("I said ur sexy");
+alert("Lol don't u wanna talk");
+alert("Why're u not answering");
+alert("Hey cutie");
+alert("Hey are u even there??");
+alert("Don't be rude");
+alert("Hey sexy");
+alert("Dammit u stuck up bitch I never like u anyway");
