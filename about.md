@@ -12,7 +12,7 @@ chart: true
 </figure>
 
 
-Hi. My name is **Corin**, and this is the start of a new blog.
+Hi. I'm **Corin**, and this is the start of a new blog.
 
 Over the next 3 months, I'll be documenting the process of teaching myself JavaScript for data visualisation, with the aim of incorporating it into the freelance journalism I've been practising for the past few years.
 
