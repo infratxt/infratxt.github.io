@@ -8,7 +8,8 @@ function startTimer(duration, display) {
     setInterval(function () {
             seconds = parseInt(timer);
         
-        display.textContent = "£" + (salaryRounded * seconds); //Print value every second
+        var youEarned = salaryRounded * seconds;        
+        display.textContent = "£" + youEarned.toFixed(2); //Print value every second
 
         if (++timer < 0) {
             timer = duration;
@@ -22,6 +23,7 @@ var salaryPerSecond = wage / (24 * 60 * 60);
 var roundUp = Math.floor(salaryPerSecond * 100000);
 var salaryRounded = roundUp / 100000;
 var poundMinutes = Math.round((1 / salaryRounded) / 60);
+
 
 //Write pound values
 document.write("<p>You earn <b>£" + salary + "</b> per month for a <b>" + hours + "</b> hour week.</p>");
