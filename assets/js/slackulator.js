@@ -24,8 +24,8 @@ var salaryRounded = roundUp / 100000;
 var poundMinutes = Math.round((1 / salaryRounded) / 60);
 
 //Write pound values
-document.write("<p>You earn <b>£" + salary + "</b> pounds per month.</p>");
-document.write("<p>That makes <b>£" + salaryRounded + "</b> pounds per second at work.</p>");
+document.write("<p>You earn <b>£" + salary + "</b> per month for a <b>" + hours + "</b> hour week.</p>");
+document.write("<p>That makes <b>£" + salaryRounded + "</b> pounds every second at work.</p>");
 document.write("<p>On average, it takes you <b>" + poundMinutes + "</b> minutes to earn <b>£1</b>.")
 
 // Run function to update display result to screen
