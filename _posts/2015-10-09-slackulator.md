@@ -2,7 +2,7 @@
 layout: post
 title:  "Slackulator"
 date:   2015-10-09 15:48:15
-categories: experiment
+categories: experiments
 ---
 
 <script src="/assets/js/slackulator.js">
