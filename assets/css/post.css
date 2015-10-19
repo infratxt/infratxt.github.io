@@ -378,7 +378,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   height: 5rem;
   background-color: black;
   color: white;
-  position: relative;
+  position: fixed;
   z-index: 9999; }
   .notepad-page-menu-header .notepad-blog-logo,
   .notepad-post-menu-header-simple .notepad-blog-logo {
@@ -415,17 +415,17 @@ html, body, .notepad-post-container, .notepad-post-header {
       .notepad-post-title-simple h1 {
         font-size: 4.375rem;
         padding-top: 5.625rem;
-        padding-bottom: 5.625rem; } }
+        padding-bottom: 6.625rem; } }
     @media only screen and (min-width: 70em) {
       .notepad-page-title h1,
       .notepad-post-title-simple h1 {
-        padding-top: 6.875rem;
+        padding-top: 8.875rem;
         padding-bottom: 6.875rem; } }
     @media only screen and (min-width: 90em) {
       .notepad-page-title h1,
       .notepad-post-title-simple h1 {
         font-size: 5.3125rem;
-        padding-top: 8.125rem;
+        padding-top: 9.125rem;
         padding-bottom: 8.125rem; } }
   .notepad-page-title .notepad-post-meta-simple,
   .notepad-post-title-simple .notepad-post-meta-simple {
@@ -434,7 +434,7 @@ html, body, .notepad-post-container, .notepad-post-header {
     padding-bottom: 2.5rem; }
     .notepad-page-title .notepad-post-meta-simple h1,
     .notepad-post-title-simple .notepad-post-meta-simple h1 {
-      padding: 0; }
+      padding: 5rem 0 0 }
     .notepad-page-title .notepad-post-meta-simple p.meta,
     .notepad-post-title-simple .notepad-post-meta-simple p.meta {
       padding-top: 0.625rem; }
