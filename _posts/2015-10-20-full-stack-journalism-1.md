@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On full-stack journalism, 1: My stack"
+title:  "On full-stack journalism, 1: What is FSJ?"
 date:   2015-10-20 14:51:15
 categories: update journalism
 permalink:
