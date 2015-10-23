@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Dark rap generator</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<link href='https://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			font-family: 'Allerta Stencil',sans-serif;
+			/*background-color: #2A2A2A;*/
+			background-image: url('https://m2.behance.net/rendition/pm/6620043/disp/57696587281b685ad0deec5970fe5515.png')
+		}
+		.wrapper {
+			margin: 10% 20%;
+			background-color: #FFFFE6;
+			padding: 5% 0;
+			border-radius: 5%;
+			opacity: .9;
+		}
+		.maintext {
+			width: 70%;
+			margin: 0 auto;
+			color: black;
+		}
+
+		h1 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 2em;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		p span {
+			display: inline-block;
+			border: 2px dotted black;
+			padding: 2px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="maintext">
+			<h1>Dark rap generator.</h1>
+			<div id="darkrap">
+			<p>I'm <span id="verb">BLANKING</span> it <span id="adverb">BLANK</span>.</p>
+			</div>			
+			<button type="button" class="btn-lg" onclick="darkRap()">Rap it...</button>
+			<p></p>
+			Click button to rap it dark.
+		</div>
+	</div>
+<script type="text/javascript" src="assets/js/darkrap.js"></script>
+</body>
+</html>
