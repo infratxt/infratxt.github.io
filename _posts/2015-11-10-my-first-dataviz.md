@@ -8,38 +8,38 @@ permalink:
 
 Last weekend I went to my first [MozFest][MF], a three-day conference/festival/expo run by the Mozilla foundation.
 
-Personally, I was excited to see that one whole floor of the Ravensbourne media campus was devoted specifically to journalism projects, and I spent a lot of the weekend there.
+Personally, I was excited to see that one whole floor of the Ravensbourne media campus was devoted specifically to journalism projects, so I ended up spending a lot of my time there.
 
-All of the sessions I attended were interesting, but on a practical level the most useful to me was a [practical demonstration of D3][D3] by (Knight Fellow.?) Juan Elosua, and a guided introduction to some basic data journalism techniques by Samantha Sunne.
+All of the sessions I attended were interesting, but on a practical level the most useful to me was a [practical demonstration of D3][D3] by Knight-Mozilla Fellow [Juan Elosua][JE], and a guided introduction to some basic data journalism techniques by [Samantha Sunne][SS].
 
-I was really keen to try out some of what I'd picked up with real-life data, and just about as soon as I got back in front of my computer, I started experimenting with some of the techniqes I'd learned. After the best part of a day learning, exploring, testing and tweaking, I finally came up with...my first data visualisation:
+I was really keen to try out some of what I'd picked up with real-life data, and just about as soon as I got back in front of my computer I started experimenting with some of the techniqes I'd learned. After the best part of a day learning, exploring, testing and tweaking, I finally came up with...my first data visualisation:
 
-> [Crime Data by London Borough.][CLB]
+> View: [Crime Data by London Borough.][CLB]
 
-(Note: styling doesn't yet work properly on mobile)
+(NB, styling doesn't work properly on mobile.)
 
 <div style="text-align: center;margin-bottom:10px;"> <b>* * *</b> </div>
 
-Although it seems fairly basic, it still took quite a few steps to piece together:
+Although it seems fairly basic, it still took quite a few steps to piece together, so here's a short overview:
 
 
 ### 1. Get the data 
 
-I wanted to work with some real data rather than just generate random values to visualise, so I visited the [UK Police open data site][UKP] and downloaded the most recent (Sept. '15) crime data from the Metropolitan Police Service.
+I wanted to work with real data rather than just generate random values to visualise, so I visited the [UK Police open data site][UKP] and downloaded the most recent (September '15) crime data from the Metropolitan Police Service.
 
-With the Met covering so many areas, this still amounted to a spreadsheet with well over one thousand rows, for a total of over a million data points. Not exactly easy to scan through at a glance.
+With the Met covering so many areas, this amounted to a spreadsheet with well over one thousand rows, and a total of over a million data points. Not exactly easy to scan through at a glance.
 
 ### 2. Clean the data
 
-This is where the techniques from Samantha's workshop came in. To extract the information I was looking for - the number of reported crimes in each borough - was a two step process.
+This is where the techniques from Samantha's workshop came in. To extract the information I was looking for - the number of reported crimes in each borough - required a two step process.
 
 ![Crime data](/images/crimedata1.png)
 
-In the spreadsheet, each separate incident had its own row in the spreadsheet, but there were no overall totals. To find these, I created a [pivot table][PT], and used the *count* function to find the total number of entries for given criteria.
+In the spreadsheet, each separate incident had its own row but there were no overall totals. To find these, I created a [pivot table][PT], and used the *count* function to find the total number of entries for given criteria.
 
 ![Crime data 2](/images/crimedata2.png)
 
-But because of how the areas were labelled, with each borough was divided into many smaller units identified with a four digit code, the summarized data was still thousands of rows long.
+But because of how the areas were labelled - each borough was divided into many smaller units identified with a four digit code - the summarized data was still thousands of rows long.
 
 To get around this, I created a new column in the original spreadsheet, and filled it by using a formula which copied the previous column, but shifted off the last four characters: `=LEFT(I2, LEN(I2)-4)` 
 
@@ -78,7 +78,7 @@ function compileBoroughGraph(borough) {
 
 With all of the data I wanted in one object, I used what I'd learned in the Mozilla demonstration, along with a step-by-step [tutorial from D3 inventor Mike Bostock][MD3], to dynamically draw rectangles with a size corresponding to the number of incidents of each type.
 
-Voilà!
+Voilà, my first dataviz!
 
 ![Crime data Hackney](/images/crimedata5.png)
 
@@ -93,3 +93,5 @@ Voilà!
 [CSV]: http://shancarter.github.io/mr-data-converter/
 [MD3]: http://bost.ocks.org/mike/bar/
 [GH]: https://github.com/infratxt/infratxt.github.io/tree/master/project/crimedata
+[JE]: https://twitter.com/jjelosua
+[SS]: https://twitter.com/samanthasunne
