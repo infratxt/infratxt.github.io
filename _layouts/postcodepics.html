@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+Owner Name: Corin Faife
+Version: 1.1
+Description: Full stack journalist in training
+====================================================
+-->
+<head>
+{% include head.html %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <style type="text/css">
+        body {
+            background-color: #e5f2ff;
+        }
+        
+        .wrapper{
+            margin: 0 6%;
+            background-color: #cce5ff;
+            padding: 2%;
+            border-radius: 15px;
+        }
+
+        .searchfield{
+            width: 100%;
+            padding: 3% 5%;
+            background-color: #f8f8f8;
+            border-radius: 15px;
+            margin-bottom: 1%;
+        }
+
+        input[type="search"], input[type="submit"] {
+            width: 50%;
+            margin: 10px;
+            height: 55px;
+        }
+
+        #pictures{
+            background-color: #f8f8f8;
+            border-radius: 15px;
+        }
+
+        #pictures img{
+            width: 31%;
+            margin: 10px 1%;
+            border-radius: 4px; 
+            border: 5px solid white;
+        }
+
+        #pictures a:hover{
+           border: none; 
+        }
+
+        #errorMessage{
+            margin-top: 10px;
+            color: #465a71;
+        }
+
+        #overlay {
+          background:rgba(0,0,0,0.8);
+          width:100%;
+          height:100%;
+          position:fixed;
+          top:0;
+          left:0;
+          display:none;
+          text-align:center;
+        }
+
+        #overlay img {
+         margin-top: 10%; 
+        }
+
+        #overlay p {
+         color:white; 
+        }
+
+    </style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+{% if page.imagefeature %}
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+{% else %}
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+{% endif %}
+                    <a class="notepad-blog-logo" href="{{ site.url }}">
+                        <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+{% for link in site.links %}
+            <li>{% if link.external %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                {% else %}
+                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+                {% endif %} </li>
+{% endfor %}            
+           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+{% if page.imagefeature %}
+            <div class="notepad-post-title bg-check">
+                <h1>{{ page.title }}</h1>
+                <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="{{ site.url }}/images/{{ page.imagefeature }}" alt="cover-image" />
+{% else %}
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>{{ page.title }}</h1>
+                            <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+{% endif %}
+        {% if page.imagefeature %}<article class="notepad-post-content post">{% else %}<article class="notepad-post-content post tag-simple">{% endif %}
+            <div>{{ content }}
+            <!-- ADD STUFF IN HERE -->
+            
+            <div class="wrapper">
+                <div class="searchfield">
+                    <form>
+                        <input id="search" type="search" placeholder="Enter your postcode"></input>
+                        <input type="submit" value="Go!" id="submit">
+                    </form>
+                    <div>
+                    <p id="errorMessage" style="display:none">Sorry, your search didn't return any results. Please try again.</p>
+                    <h3 style="margin-left: 10px;">Your postcode is: </h3><h4 style="margin-left: 10px;" id="yourPostcode"></h4>
+                    <h3 style="margin-left: 10px;">Your district is: </h3><h4 style="margin-left: 10px;" id="yourDistrict"></h4>      
+                    <h3 style="margin-left: 10px;">Your region is: </h3><h4 style="margin-left: 10px;" id="yourRegion"></h4>
+                    </div>
+                </div>
+                <div id="pictures">
+                </div>
+            </div>
+            <script type="text/javascript" src="../../project/postcodepics/postcodepics.js"></script>
+            <script type="text/javascript" src="../../project/postcodepics/lightbox.js"></script>
+            </div>
+        
+        </article>
+        <div class="cf"></div>
+{% if site.share %}{% include share.html %}{% endif %}
+        <div class="cf"></div>
+        
+{% include signoff.html %} 
+        
+        <div class="cf"></div>
+        {% if site.disqus_shortname and page.comments == true %}
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        {% include disqus_comments.html %}
+    </div>
+</section>
+{% endif %}
+        <div class="cf"></div>
+
+    {% include footer.html %} 
+</main>    
+{% include scripts.html %} 
+</body>
+</html>

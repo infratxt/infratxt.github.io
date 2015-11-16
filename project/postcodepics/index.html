@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pics from your postcode</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background-color: #e5f2ff;
+		}
+		
+		.wrapper{
+			margin: 10%;
+			background-color: #cce5ff;
+			padding: 2%;
+			border-radius: 15px;
+		}
+
+		.searchfield{
+			width: 100%;
+			padding: 1%;
+			background-color: #f8f8f8;
+			border-radius: 15px;
+			margin-bottom: 1%;
+		}
+
+		#pictures{
+			background-color: #f8f8f8;
+			border-radius: 15px;
+		}
+
+		#pictures img{
+			width: 30%;
+			margin: 5px 1%;
+			border-radius: 4px; 
+			border: 1px solid lightgrey;
+		}
+
+		#errorMessage{
+			margin-top: 10px;
+			color: #465a71;
+		}
+
+		#overlay {
+		  background:rgba(0,0,0,0.8);
+		  width:100%;
+		  height:100%;
+		  position:fixed;
+		  top:0;
+		  left:0;
+		  display:none;
+		  text-align:center;
+		}
+
+		#overlay img {
+		 margin-top: 10%; 
+		}
+
+		#overlay p {
+		 color:white; 
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="searchfield">
+		<h1>Pictures from your postcode</h1>
+		<form>
+			<input id="search" type="search" placeholder="Enter your postcode"></input>
+			<input type="submit" value="Go!" id="submit">
+		</form>
+		<div>
+		<p id="errorMessage" style="display:none">Sorry, your search didn't return any results. Please try again.</p>
+		<h3>Your postcode is: </h3><h4 id="yourPostcode"></h4>
+		<h3>Your district is: </h3><h4 id="yourDistrict"></h4>		
+		<h3>Your region is: </h3><h4 id="yourRegion"></h4>
+		</div>
+	</div>
+	<div id="pictures">
+	</div>
+</div>
+<script type="text/javascript" src="postcodepics.js"></script>
+<script type="text/javascript" src="lightbox.js"></script>
+
+</body>
+</html>
