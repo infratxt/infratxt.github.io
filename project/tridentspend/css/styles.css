@@ -1,0 +1,50 @@
+/* Model it on: http://www.baesystems.com/en/home */
+
+
+/* Layout
+================================= */
+
+
+.container {
+	background:rgba(255,255,255,0.8);
+	padding-top: 10px;
+	border-radius: 10px
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+/* Jumbotron
+================================= */
+
+.jumbotron {
+	text-align: center;
+	background-image: url('../images/Vanguard_at_Faslane.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 0;
+}
+
+#spend p {
+	text-align: justify;
+}
+
+#youspent {
+	text-align: justify;
+	padding-left: 50px;
+}
+
+#youspent li {
+	line-height: 1.5em;
+}
+
+/* Glyphicons
+================================ */
+
+.glyphicon {
+	font-size: 3em;
+	display: block;
+	text-align: center;
+	color: #3a87ad;
+}
