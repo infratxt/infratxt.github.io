@@ -31,12 +31,18 @@
 }
 
 #youspent {
-	text-align: justify;
-	padding-left: 50px;
+	text-align: left;
+	padding: 0 50px;
+
 }
 
 #youspent li {
 	line-height: 1.5em;
+}
+
+#buttons {
+	text-align: left;
+	padding-left: 50px;
 }
 
 /* Glyphicons
