@@ -2,20 +2,20 @@
 layout: post
 title:  "Last Week's Work: Dark Rap"
 date:   2015-10-27 11:55:15
-categories: update
+categories: 50DaysOfCode
 permalink:
 ---
 
 
 At the end of last week, I built two interactive pages based around modifying text in different ways.
 
-The first was the [_Dark Rap Generator_][DR], a project for rap entertainment brand [Don't Flop][DF], and the second was [_Words In Chalk_][WC], a simple text animation of a short poem by Hibaq Osman. (Full interactivity for the latter only works on desktop). 
+The first was the [_Dark Rap Generator_][DR], a project for rap entertainment brand [Don't Flop][DF], and the second was [_Words In Chalk_][WC], a simple text animation of a short poem by Hibaq Osman. (Full interactivity for the latter only works on desktop).
 
 Both of them were quick to put together and fun to make, and let me play around with a few different JavaScript techniques in the process; for now I'm going to talk about the first.
 
 
 ### Dark Rap Generator
-The idea behind the Dark Rap Generator comes from what I guess you could call a 'performance meme' within the Don't Flop rap battle league. 
+The idea behind the Dark Rap Generator comes from what I guess you could call a 'performance meme' within the Don't Flop rap battle league.
 
 It would take longer than it's worth to explain in context, but it began with the phrase *"I'm rapping it darker"*, and evolved into an in-joke where various rappers in the league would start verses with a line that was constructed <em>"I'm (<b>verb</b>)ing it (<b>adverb</b>)."</em>
 
@@ -29,7 +29,7 @@ So, the project brief - thought up in a pub with [my brother][FDF], who also hap
 
 The most encouraging thing for me was how easy I found it was to do this, when just a few weeks ago it would have been at the edge of my ability.
 
-When broken down, the basic process I identified was: 
+When broken down, the basic process I identified was:
 
 1. Populate two lists of words and store them in arrays
 2. When a button was clicked, use a random function to select an index number from each array
@@ -44,10 +44,10 @@ And when properly written out and tested, it looked like:
 //1. Populate list of verbs and adverbs
 var verbList = [
 	"rapping", "speaking", "rhyming", etc..];
-	
+
 var adverbList = [
 	"dark", "darker", "hard", etc...];
-	
+
 //2. Use math.random and array.length to select random item
 	function darkRap() {
 	var verb = verbList[Math.floor((Math.random() * verbList.length))];
@@ -67,18 +67,18 @@ The html on the corresponding page was also simple: two text spans with the id "
 <div>
 
  <h1>Dark rap generator:</h1>
- 
+
 	<div id="darkrap">
 	  <p>I'm <span id="verb"></span> it <span id="adverb"></span>.</p>
 	</div>			
-	
+
 	<button type="button" class="btn-lg" onclick="darkRap()">Rap it...</button>
-	
+
 	Click button to rap it dark.
 </div>
 {% endhighlight %}
 
-I styled the page using [Bootstrap][BS], then added some custom images and CSS for an appropriate visual tone. 
+I styled the page using [Bootstrap][BS], then added some custom images and CSS for an appropriate visual tone.
 
 It was launched at around midday on Friday 23rd October, and got more than a thousand unique visitors *per day* across that weekend.
 

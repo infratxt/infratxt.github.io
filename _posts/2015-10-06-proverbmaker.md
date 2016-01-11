@@ -2,7 +2,7 @@
 layout: post
 title:  "Proverb maker"
 date:   2015-10-06 12:05:15
-categories: experiments
+categories: experiments 50DaysOfCode
 permalink:
 ---
 
@@ -10,7 +10,7 @@ permalink:
 
 </script>
 
-The proverb you've just created was made with my first JavaScript programme! 
+The proverb you've just created was made with my first JavaScript programme!
 
 The code that runs it is as follows:
 
@@ -20,13 +20,13 @@ The code that runs it is as follows:
 	var verb = prompt("Type a verb e.g. 'hit'");
 	var object = prompt("Type an object noun, e.g. 'brick'");
 	var natObject = prompt("Type a natural object, e.g. 'lake'")
-	
+
 	alert("Ok, let's hear your proverb!");
 
 	// Combine strings
 	var line1 = "When the " + subject + " " + verb + "s the " + object + ",";
 	var line2 = " the " + natObject + " will be " + adjective + ".";
-	
+
 	// Join and write to document
 	var proverb = line1 + line2;
 	document.write("<h2>"+proverb+"</h2>")

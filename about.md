@@ -11,11 +11,8 @@ chart: true
   <figcaption>Corin Faife</figcaption>
 </figure>
 
+Hi, I'm **Corin**. In October 2015 I took a three month sabbatical from work in order to teach myself HTML, CSS and JavaScript, mostly by following courses from the [Treehouse learning platform](https://teamtreehouse.com/corinfaife).
 
-Hi. I'm **Corin**, and this is the start of a new blog.
+Along the way I started this blog to write about what I was learning, and created a few [experimental projects](/categories/index.html#experiments) to showcase the skills I was working on.
 
-Over the next 3 months, I'll be documenting the process of teaching myself JavaScript for data visualisation, with the aim of incorporating it into the freelance journalism I've been practising for the past few years.
-
-Expect tutorials, code snippets, general thoughts, and frequent weeping into my keyboard.
-
-Let the games begin...
+As of January 2016 I've started to take freelance commissions for **web design**, **data visualisation** and **online articles**, but will continue to write here about design, code, politics, and especially the areas of overlap.

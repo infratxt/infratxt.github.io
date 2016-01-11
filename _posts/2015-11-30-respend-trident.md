@@ -2,7 +2,7 @@
 layout: post
 title:  "Re-Spend Trident"
 date:   2015-11-30 17:25:15
-categories: update journalism
+categories: journalism experiments 50DaysOfCode
 ---
 
 [Re-Spend Trident][RT] is a prototype for a standalone news app site made in response to news of the [massively overrunning costs][OC] of the Trident nuclear weapons renewal programme.

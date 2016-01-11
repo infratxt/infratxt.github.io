@@ -2,7 +2,7 @@
 layout: post
 title:  "Webscraping with Node.js"
 date:   2015-12-22 17:35:00
-categories: node journalism investigation
+categories: node journalism investigation experiments 50DaysOfCode
 image:
   feature: dailyscrape1.png
   thumb: dailyscrape1-thumb.png
@@ -16,9 +16,9 @@ Examples can be found everywhere on the internet: Google scrapes websites in ord
 
 As a journalist, I'm interested in using scraping as a tool for generating stories from previously inaccessible datasets, and detecting patterns that are spread across disparate sources of information. And in order to write my own scraper, I had to first get to grips with [NodeJS][NJ].
 
-**Node.js** is *"a JavaScript runtime built on Chrome's V8 JavaScript engine"*, or in other words, a way to write and execute JavaScript programmes which can run as standalone applications instead of working only in the browser. This means they can be controlled from your computer's command line, and perform operations like writing to the filesystem, [talking to a database](http://mean.io/#!/) and many other things besides. 
+**Node.js** is *"a JavaScript runtime built on Chrome's V8 JavaScript engine"*, or in other words, a way to write and execute JavaScript programmes which can run as standalone applications instead of working only in the browser. This means they can be controlled from your computer's command line, and perform operations like writing to the filesystem, [talking to a database](http://mean.io/#!/) and many other things besides.
 
-What's also incredibly useful is that there are a huge number of ['packages' available for Node](https://www.npmjs.com/), each of which is a collection of code which a developer has written to make Node perform a certain task, and then published online for other people to make use of. 
+What's also incredibly useful is that there are a huge number of ['packages' available for Node](https://www.npmjs.com/), each of which is a collection of code which a developer has written to make Node perform a certain task, and then published online for other people to make use of.
 
 There are also a huge number of online tutorials showing you how to make use of different packages, like this video specifically on webscraping with Node - which helped me start on writing my own scraper.
 
@@ -127,7 +127,7 @@ All I needed to do was use **fs** to read the text file that I had saved, use **
 {% highlight javascript %}
 var gramophone = require('gramophone');
 
-var completeDMcorpus = fs.readFile('./corpus.txt', 'utf8', 
+var completeDMcorpus = fs.readFile('./corpus.txt', 'utf8',
     function (err, data) {
   if (err) throw err;
   console.log("Data received.");

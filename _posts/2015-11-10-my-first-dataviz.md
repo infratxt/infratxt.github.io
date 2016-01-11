@@ -2,7 +2,7 @@
 layout: post
 title:  "My First Dataviz"
 date:   2015-11-10 15:58:00
-categories: experiments
+categories: experiments 50DaysOfCode
 permalink:
 ---
 
@@ -23,7 +23,7 @@ I was really keen to try out some of what I'd picked up with real-life data, and
 Although it seems fairly basic, it still took quite a few steps to piece together, so here's a short overview:
 
 
-### 1. Get the data 
+### 1. Get the data
 
 I wanted to work with real data rather than just generate random values to visualise, so I visited the [UK Police open data site][UKP] and downloaded the most recent (September '15) crime data from the Metropolitan Police Service.
 
@@ -41,7 +41,7 @@ In the spreadsheet, each separate incident had its own row but there were no ove
 
 But because of how the areas were labelled - each borough was divided into many smaller units identified with a four digit code - the summarized data was still thousands of rows long.
 
-To get around this, I created a new column in the original spreadsheet, and filled it by using a formula which copied the previous column, but shifted off the last four characters: `=LEFT(I2, LEN(I2)-4)` 
+To get around this, I created a new column in the original spreadsheet, and filled it by using a formula which copied the previous column, but shifted off the last four characters: `=LEFT(I2, LEN(I2)-4)`
 
 (This means, take characters starting from the left of cell I2, with a length equal to the contents of cell I2 - 4).
 

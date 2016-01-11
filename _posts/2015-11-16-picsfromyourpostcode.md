@@ -2,7 +2,7 @@
 layout: postcodepics
 title:  "Pics from your postcode"
 date:   2015-11-16 14:35:15
-categories: experiments
+categories: experiments 50DaysOfCode
 ---
 
 This project uses [jQuery](http://jquery.com/) and makes cross-domain AJAX requests using [JSONP](https://en.wikipedia.org/wiki/JSONP). The script makes API calls to [Postcodes.io](http://postcodes.io/) to get latitude and longitude details for a given postcode, and then [Panoramio](http://www.panoramio.com/) to load a set of pictures from those coordinates. Clicking on a picture will also focus it in a lightbox.

@@ -2,7 +2,7 @@
 layout: post
 title:  "On full-stack journalism, 1: What is FSJ?"
 date:   2015-10-20 14:51:15
-categories: update journalism
+categories: journalism 50DaysOfCode
 permalink:
 ---
 
@@ -15,7 +15,7 @@ In software terms, a full-stack developer is someone who can operate at all poin
 
 So in looking critically at my own work and skillset, I wanted to borrow from those ideas to think about what a journalist would look like if they were able to work at all points of the media production spectrum.
 
-From where I am at the moment, here’s what I consider to be areas that a 'full-stack journalist' would need to operate across, and an assessment of where I am in relation to that. 
+From where I am at the moment, here’s what I consider to be areas that a 'full-stack journalist' would need to operate across, and an assessment of where I am in relation to that.
 
 Let's start with some skills that I currently have, with ratings:
 
@@ -28,7 +28,7 @@ Let's start with some skills that I currently have, with ratings:
 * **Training and facilitating**: strong. I've run various workshops to teach some of the above skills, in the UK and abroad, and for the most part loved doing it.
 * **Project management**: fair. I've led on a few projects in the past and managed some small teams, but again, could learn a lot more.
 
-<div style="text-align: center"> <b>* * *</b> </div> 
+<div style="text-align: center"> <b>* * *</b> </div>
 
 When I list my skills like that, what I see is that a lot of them are geared towards the content production end of things, with a bit of management and interpersonal stuff. There's more weighting towards the recording and presenting of information with less emphasis on research, and equally, though being digital, the bulk of it is end-user stuff but falls short of any coder/maker skills.
 
@@ -47,7 +47,7 @@ And on the research side, here are a few areas I’m interested in learning more
 * **Lodging FOIA requests**: using the Freedom of Information Act in order to bring new information to light in the public interest.
 * **Understanding company records**: being able to track corporate financial records more closely, and provide context to stories using information stored in company documents.
 
-As a final point, increasingly I view the skills needed to explore new revenue streams and alternative business models as just as much a part of what it means to be a successful full-stack journalist as the previous points are. 
+As a final point, increasingly I view the skills needed to explore new revenue streams and alternative business models as just as much a part of what it means to be a successful full-stack journalist as the previous points are.
 
 To this end, I’ll finish with a few things which are more in the category ‘to think about’ at the moment, but still very much on my radar:
 
