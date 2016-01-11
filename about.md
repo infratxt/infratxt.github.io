@@ -16,3 +16,5 @@ Hi, I'm **Corin**. In October 2015 I took a three month sabbatical from work in 
 Along the way I started this blog to write about what I was learning, and created a few [experimental projects](/categories/index.html#experiments) to showcase the skills I was working on.
 
 As of January 2016 I've started to take freelance commissions for **web design**, **data visualisation** and **online articles**, but will continue to write here about design, code, politics, and especially the areas of overlap.
+
+If you want to contact me, feel free to send me a [tweet](https://twitter.com/intent/tweet?text=@corintxt%20hi!) or an [email](mailto:corin@infratxt.co).
